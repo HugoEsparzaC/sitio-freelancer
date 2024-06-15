@@ -5,3 +5,12 @@ html {
 body {
     font-size: 16px; /*1rem = 10px*/
 }
+
+.title {
+    text-align: center;
+    font-size: 3.8rem;
+}
+
+.title span {
+    font-size: 2rem;
+}
