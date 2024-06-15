@@ -114,6 +114,11 @@ h1, h2, h3 {
     border-radius: 0.5rem;
     width: 90%;
     text-align: center;
+    border: none;
+}
+
+.boton:hover {
+    cursor: pointer;
 }
 
 .servicio {
@@ -132,6 +137,18 @@ h1, h2, h3 {
     font-weight: 400;
 }
 
+.flex {
+    display: flex;
+}
+
+.alinear-derecha {
+    justify-content: flex-end;
+}
+
+.w-sm-100 {
+    width: 100%;
+}
+
 .servicio .iconos {
     height: 15rem;
     width: 15rem;
@@ -140,6 +157,49 @@ h1, h2, h3 {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+}
+
+.formulario {
+    background-color: var(--gris);
+    width: min(60rem, 100%);
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.formulario legend {
+    text-align: center;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: var(--secundario);
+}
+
+.formulario fieldset {
+    border: none;
+}
+
+.campo {
+    margin-bottom: 1rem;
+}
+
+.campo textarea {
+    height: 20rem;
+}
+
+.campo label {
+    color: var(--blanco);
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.input-text {
+    width: 100%;
+    border: none;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
 }
 
 @media (min-width: 768px) {
@@ -156,5 +216,21 @@ h1, h2, h3 {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         column-gap: 1.5rem;
+    }
+
+    .w-sm-100 {
+        width: auto;
+    }
+
+    .contenedor-campos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto auto 20rem;
+        column-gap: 1rem;
+    }
+
+    .campo:nth-child(3),
+    .campo:nth-child(4) {
+        grid-column: 1 / 3;
     }
 }
