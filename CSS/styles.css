@@ -2,6 +2,7 @@
     --blanco: #ffffff;
     --negro: #212121;
     --primario: #00b341;
+    --secundario: #08FF00;
     --gris: #757575;
 }
 
@@ -21,4 +22,30 @@ body {
 
 .title span {
     font-size: 2rem;
+}
+
+.contenedor {
+    width: 120rem;
+    margin: 0 auto;
+}
+
+.navegacion-principal {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navegacion-principal a {
+    padding: 1rem;
+    color: var(--blanco);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.navegacion-principal a:hover {
+    background-color: var(--secundario);
+    color: var(--negro);
+}
+.nav-bg {
+    background-color: var(--primario);
 }
