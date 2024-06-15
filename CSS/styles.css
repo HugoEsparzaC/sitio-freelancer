@@ -10,6 +10,7 @@
 html {
     font-size: 62.5%;
     box-sizing: border-box;
+    /* scroll-snap-type: y mandatory; */
 }
 
 *, *:before, *:after {
@@ -120,6 +121,13 @@ h1, h2, h3 {
 .boton:hover {
     cursor: pointer;
 }
+
+/* .servicios,
+.navegacion-principal,
+.formulario {
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+} */
 
 .servicio {
     display: flex;
